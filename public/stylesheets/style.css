@@ -1,0 +1,70 @@
+.post-detail img {
+    width: 800px;
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 200px
+}
+
+.post-detail h1 { 
+    margin-top: 10 px;
+    margin-bottom: 20 px;
+    color: blue;
+    font-family: Arial;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 200px
+}
+
+.post-detail p {
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 200px 
+}
+
+.project-detail img {
+    width: 800px;
+    height: 600px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.project-detail h1 { 
+    margin-top: 10 px;
+    margin-bottom: 20 px;
+    color: blue;
+    font-family: Arial;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 200px
+}
+
+.project-detail p {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 200px
+}
+
+.card {
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+
+body {
+    background-image: url("https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190301162050/Lst.jpg");
+    background-attachment: fixed;  
+  }
+
+.card-text {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.card-title {
+    font-family: Arial;
+    font-family: 20px;
+}

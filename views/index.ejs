@@ -9,9 +9,17 @@
       <%- include('navbar'); -%>
 
       <div class="container">
-        <div class="row">
+        <div class="row no-gutters">
           <% posts.forEach((post) => { %>
             <%- include('post_card', { post: post }); -%>
+            <% }); %>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row no-gutters">
+          <% projects.forEach((project) => { %>
+            <%- include('project_card', { project: project }); -%>
             <% }); %>
         </div>
       </div>
