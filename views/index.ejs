@@ -22,6 +22,16 @@
             <%- include('project_card', { project: project }); -%>
             <% }); %>
         </div>
+
+        <div class="container">
+          <div class="row no-gutters">
+            <% noticias.forEach((noticia) => { %>
+              <%- include('noticia_card', { noticia: noticia }); -%>
+              <% }); %>
+          </div>
+  
+
+
       </div>
   </body>
 </html>
