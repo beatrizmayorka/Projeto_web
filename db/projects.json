@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Aeronave Hipersônica",
+        "image": "project1.jpg",
+        "description": "A Boeing, fabricante americana de aviões, apresentou um conceito de aeronave hipersônica capaz de ligar Nova York a Londres em apenas duas horas, em vez das sete atuais.",
+        "subject": "Segundo a Boeing, a aeronave poderá atingir Mach 5 (cinco vezes a velocidade do som), mais de 6 mil quilômetros por hora. A velocidade é 2,5 vezes maior que a do Concorde, avião supersônico europeu lançado em 1969."
+    },
+    {
+        "id": 2,
+        "name": "Avião Elétrico",
+        "image": "project2.jpg",
+        "description": "A Nasa está desenvolvendo uma tecnologia experimental que pode ser a solução para o impacto ambiental da aviação: uma aeronave totalmente elétrica que não libera gases do efeito estufa como o CO2, grande inimigo das viagens aéreas.",
+        "subject": "Para dar origem ao X-57, uma aeronave italiana Tecnam P2006T receberá motores elétricos. A Nasa também irá comparar os dados de desempenho das duas aeronaves para medir sua eficiência."
+    },
+    {
+        "id": 3,
+        "name": "Tecnologia Blockchain",
+        "image": "project3.jpg",
+        "description": "O blockchain, tecnologia que ganhou fama junto com o surgimento das criptomoedas, tem aparecido rapidamente como uma ótima opção entre diretores de TI de aeroportos e companhias aéreas ao redor do planeta por seu potencial de exploração relacionado aos negócios.",
+        "subject": "O uso mais esperado dessa tecnologia tanto para companhias aéreas quanto para aeroportos é a otimização do processo de identificação de passageiros. Esse foi o principal benefício respondido por 40% das empresas e 36% dos terminais. As companhias aéreas também esperam que a tecnologia forneça benefícios na distribuição de tokens de passageiros para programas de milhagem (34%) e bilhetes eletrônicos (31%). Os diretores de TI dos aeroportos têm o rastreamento de itens como bagagens (28%) e a eficiência operacional (24%) outros potenciais de exploração."
+    }
+]

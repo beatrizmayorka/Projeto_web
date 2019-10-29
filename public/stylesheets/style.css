@@ -20,11 +20,12 @@
     font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 200px 
+    margin-left: 200px;
+    color: aliceblue; 
 }
 
 .project-detail img {
-    width: 800px;
+    width: 85px;
     height: 600px;
     margin-top: 10px;
     margin-left: 200px;
@@ -37,7 +38,7 @@
     font-family: Arial;
     font-size: 40px;
     margin-top: 10px;
-    margin-left: 200px
+    margin-left: 200px;
 }
 
 .project-detail p {
@@ -45,7 +46,7 @@
     font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 200px
+    margin-left: 200px;
 }
 
 .card {
@@ -67,29 +68,4 @@ body {
 .card-title {
     font-family: Arial;
     font-family: 20px;
-}
-
-.noticias-detail img {
-    width: 800px;
-    height: 600px;
-    margin-top: 10px;
-    margin-left: 200px
-}
-
-.noticias-detail h1 { 
-    margin-top: 10 px;
-    margin-bottom: 20 px;
-    color: blue;
-    font-family: Arial;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-left: 200px
-}
-
-.noticias-detail p {
-    font-family: Arial;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 200px 
 }

@@ -1,39 +1,39 @@
-var getTestimonials = function() {
-    var testimonials = [
-      {
-        id: 1,
-        name: 'Derick',
-        company: 'Oracle',
-        title: 'Software Engineer',
-        testimony: 'I love my company!!'
-      },
-      {
-        id: 2,
-        name: 'Maria Fernanda',
-        company: 'Facebook',
-        title: 'Systems Analyst',
-        testimony: 'I love my job!!'
-      },
-      {
-        id: 3,
-        name: 'Zayn',
-        company: 'Google',
-        title: 'Information Architect',
-        testimony: 'I am professionally accomplished!!'
-      },
-      {
-        id: 4,
-        name: 'Laura',
-        company: 'IBM - International Business Machines Corporation',
-        title: 'Software Architect',
-        testimony: 'I love Java!!'
-      }
-    ];
-  
+var fs = require('fs');
+
+var testimonialsFilePath = 'db/testimonials.json';
+
+var loadFileTestimonials = function()
+{
+    var fileData = fs.readFileSync(testimonialsFilePath);
+
+    var testimonials = JSON.parse(fileData);
+
     return testimonials;
-  }
-  
-  module.exports = {
-    getTestimonials: getTestimonials
-  }
-  
+}
+
+var saveFileTestimonials = function(testimonials)
+{
+    var data = JSON.stringify(testimonials);
+    fs.writeFileSync(testimonialsFilePath, data, 'utf8');
+}
+
+var getTestimonials = function()
+{
+    var testimonials = loadFileTestimonials();
+
+    return testimonials;
+}
+
+var saveTestimony = function(newTestimony)
+{
+    var testimonials = loadFileTestimonials();
+    testimonials.push(newTestimony);
+    saveFileTestimonials(testimonials);
+}
+
+// Exportar a função no module...
+module.exports = 
+{// Referencia fora : nome do arquivo interno
+    getTestimonials: getTestimonials,
+    saveTestimony: saveTestimony
+}
