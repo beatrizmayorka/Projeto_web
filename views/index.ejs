@@ -4,34 +4,16 @@
     <title><%= title %></title>
     <%- include('imports'); -%>
   </head>
-
   <body>
-      <%- include('navbar'); -%>
-
-      <div class="container">
-        <div class="row no-gutters">
-          <% posts.forEach((post) => { %>
-            <%- include('post_card', { post: post }); -%>
-            <% }); %>
-        </div>
+    <%- include('navbar'); -%>
+    
+    <div class="container">
+      <div class="row">
+        <% posts.forEach((post) => { %>
+          <%- include('post_card', { post: post }); -%>
+        <% }); %>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="row no-gutters">
-          <% projects.forEach((project) => { %>
-            <%- include('project_card', { project: project }); -%>
-            <% }); %>
-        </div>
-
-        <div class="container">
-          <div class="row no-gutters">
-            <% noticias.forEach((noticia) => { %>
-              <%- include('noticia_card', { noticia: noticia }); -%>
-              <% }); %>
-          </div>
-  
-
-
-      </div>
   </body>
 </html>
