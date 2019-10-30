@@ -1,0 +1,22 @@
+<li class="list-group-item  rounded">
+        <div class="media"><img src="<%= `/images/${produto.image}`%>" class="align-self-start mr3 rounded">
+            <div class="media-body ml-2">
+                <h3>
+                    <%= produto.name %>
+                </h3>
+
+                <p>
+                    <%= produto.description %>
+                </p>
+
+                <h4>
+                    <%= produto.price %>
+            </h4>
+
+            <div class="row mb-2">
+                <a href="#" class="btn btn-dark btn-outline-info" > Adicionar ao carrinho </a>
+            </div>
+
+            </div>
+        </div>  
+</li>

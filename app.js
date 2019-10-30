@@ -11,6 +11,7 @@ var testimonialsRouter = require('./routes/testimonials');
 var adminPostsRouter = require('./routes/admin/posts');
 var adminProjectsRouter = require('./routes/admin/projects');
 var adminTestimonialsRouter = require('./routes/admin/testimonials');
+var adminProdutosRouter = require('./routes/admin/produtos');
 var authRouter = require('./routes/auth');
 var verifyAuth = require('./middlewares/authMiddleware');
 
@@ -41,6 +42,7 @@ app.use('/auth', authRouter);
 app.use('/admin/posts', [verifyAuth] ,adminPostsRouter);
 app.use('/admin/projects', [verifyAuth] ,adminProjectsRouter);
 app.use('/admin/testimonials', [verifyAuth] ,adminTestimonialsRouter);
+app.use('/admin/produtos', [verifyAuth], adminProdutosRouter);
 app.use('/users', usersRouter);
 app.use('/testimonials', testimonialsRouter);
 

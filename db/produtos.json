@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Cerveja",
+        "image": "produto1.jpg",
+        "description": "Heineken Larger Beer, ou simplesmente Heineken, é uma cerveja lager pálido com 5% de álcool por volume produzido pela empresa cervejeira holandesa Heineken International.",
+        "price": "R$5,99"
+    },
+    {
+        "id": 2,
+        "name": "Picanha",
+        "image": "produto2.jpg",
+        "description": "A Picanha é um tipo de corte de carne bovina tipicamente brasileira. A origem do nome Picanha advém do tratamento talhante Italiano, nomeadamente do corte Picatta.",
+        "price": "R$22,59 o kg."
+    },
+    {
+        "id": 3,
+        "name": "Carvão",
+        "image": "produto3.jpg",
+        "description": "O carvão vegetal é obtido a partir da queima ou carbonização de madeira, após esse processo resulta em uma substância negra.",
+        "price": "R$10,50"
+    }
+]
