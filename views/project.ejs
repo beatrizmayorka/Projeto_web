@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <%- include('imports'); -%>
-  </head>
-  <body>
-    <header>
-      <%- include('navbar'); -%>
-    </header>
-    
-    <div class="container">
-        <div class="row">
-            <div class="post-detail rounded mx-auto d-block">
-                <img src="/images/<%= project.image %>" class="mx-auto d-block">
-                <h1><%= project.name %></h1> 
-                <p class="text-justify"><%= project.subject %></p>
-            </div> 
-        </div>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('imports'); -%>
+</head>
+
+<body>
+  <header>
+    <%- include('navbar'); -%>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="post-detail rounded mx-auto d-block">
+        <img src="/images/<%= project.image %>" class="mx-auto d-block">
+        <h1>
+          <%= project.name %>
+        </h1>
+        <p class="text-justify">
+          <%= project.subject %>
+        </p>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

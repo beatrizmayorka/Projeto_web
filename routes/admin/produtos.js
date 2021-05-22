@@ -3,7 +3,7 @@ var router = express.Router();
 var produtosService = require('../../services/produtosService');
 var upload = require('../../middlewares/uploaderMiddleware');
 
-router.get('/', function(req, res, next){
+router.get('/', function (req, res, next) {
 
     var produtos = produtosService.getProdutos();
 
@@ -14,12 +14,12 @@ router.get('/', function(req, res, next){
     res.render('admin/produtos/index', data);
 });
 
-router.get('/create', function(req, res, next){
+router.get('/create', function (req, res, next) {
 
     res.render('admin/produtos/create');
 });
 
-router.post('/create', upload.single('image'), function(req, res, next){
+router.post('/create', upload.single('image'), function (req, res, next) {
 
     var produtos = produtosService.getProdutos();
 
@@ -27,7 +27,7 @@ router.post('/create', upload.single('image'), function(req, res, next){
 
     var newProduto = {};
     newProduto.name = req.body.name;
-    newProduto.image = req.file.filename;     
+    newProduto.image = req.file.filename;
     newProduto.description = req.body.description;
     newProduto.price = req.body.price;
 

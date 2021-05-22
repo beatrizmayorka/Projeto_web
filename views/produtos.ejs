@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <%- include('imports'); -%>
-  </head>
-  <body>
-    <header>
-      <%- include('navbar'); -%>
-    </header>
 
-    <div class="container">
-    
-        <h1 class="my-3">Produtos</h1>
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('imports'); -%>
+</head>
 
-        <ul class="list-group list-group-flush">
+<body>
+  <header>
+    <%- include('navbar'); -%>
+  </header>
 
-            <% produtos.forEach((produto) => { %>
-                <%- include('produto_list', {produto: produto}); -%>
-            <% }); %>
-            
-        </ul>
-    </div>
-  </body>
+  <div class="container">
+
+    <h1 class="my-3">Produtos</h1>
+
+    <ul class="list-group list-group-flush">
+
+      <% produtos.forEach((produto)=> { %>
+        <%- include('produto_list', {produto: produto}); -%>
+          <% }); %>
+
+    </ul>
+  </div>
+</body>
+
 </html>

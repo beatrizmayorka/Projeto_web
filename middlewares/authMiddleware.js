@@ -1,10 +1,10 @@
 var authService = require('../services/authService');
 
-var verifyAuth = function(req, res, next) {
+var verifyAuth = function (req, res, next) {
   var loginToken = req.cookies['loginToken'];
 
-  if(loginToken) {
-    if(req.session.authenticatedUsers) {
+  if (loginToken) {
+    if (req.session.authenticatedUsers) {
       var user = req.session.authenticatedUsers.find(u => u.loginToken === loginToken);
 
       if (user) {

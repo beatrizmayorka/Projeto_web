@@ -5,15 +5,15 @@ var projectsService = require('../services/projectsService');
 var produtosService = require('../services/produtosService');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   var posts = postsService.getPosts();
   var projects = projectsService.getProjects();
   var produtos = produtosService.getProdutos();
 
-  res.render('index', { title: 'Blog', posts: posts, projects: projects, produtos: produtos});
+  res.render('index', { title: 'BLOG', posts: posts, projects: projects, produtos: produtos });
 });
 
-router.get('/posts/:postId', function(req, res, next) {
+router.get('/posts/:postId', function (req, res, next) {
   var postId = req.params.postId;
 
   var posts = postsService.getPosts();
@@ -25,15 +25,13 @@ router.get('/posts/:postId', function(req, res, next) {
 });
 
 
-router.get('/projects', function(req, res, next)
-{
+router.get('/projects', function (req, res, next) {
   var projects = projectsService.getProjects();
 
   res.render('projects', { title: 'Projetos', projects: projects });
 });
 
-router.get('/project/:projectId', function(req, res, next)
-{
+router.get('/project/:projectId', function (req, res, next) {
   var projectId = req.params.projectId;
 
   var projects = projectsService.getProjects();
@@ -43,15 +41,13 @@ router.get('/project/:projectId', function(req, res, next)
   res.render('project', { title: project.title, project: project });
 });
 
-router.get('/produtos', function(req, res, next)
-{
+router.get('/produtos', function (req, res, next) {
   var produtos = produtosService.getProdutos();
 
   res.render('produtos', { title: 'Produtos', produtos: produtos });
 });
 
-router.get('/produto/:produtoId', function(req, res, next)
-{
+router.get('/produto/:produtoId', function (req, res, next) {
   var produtoId = req.params.produtoId;
 
   var produtos = produtosService.getProdutos();

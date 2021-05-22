@@ -1,4 +1,4 @@
-var multer  = require('multer');
+var multer = require('multer');
 var path = require('path');
 
 var storage = multer.diskStorage({

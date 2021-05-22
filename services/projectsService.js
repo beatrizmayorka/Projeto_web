@@ -2,8 +2,7 @@ var fs = require('fs');
 
 var projectsFilePath = 'db/projects.json';
 
-var loadFileProjects = function()
-{
+var loadFileProjects = function () {
     var fileData = fs.readFileSync(projectsFilePath, 'utf8');
 
     var projects = JSON.parse(fileData);
@@ -11,23 +10,20 @@ var loadFileProjects = function()
     return projects;
 }
 
-var saveFileProjects = function(projects)
-{
+var saveFileProjects = function (projects) {
     var data = JSON.stringify(projects);
 
     fs.writeFileSync(projectsFilePath, data, 'utf8');
 }
 
 
-var getProjects = function()
-{
+var getProjects = function () {
     var projects = loadFileProjects();
 
     return projects;
 }
 
-var saveProject = function(newProject)
-{
+var saveProject = function (newProject) {
     var projects = loadFileProjects();
 
     projects.push(newProject);
@@ -35,7 +31,7 @@ var saveProject = function(newProject)
     saveFileProjects(projects);
 }
 
-module.exports = 
+module.exports =
 {
     getProjects: getProjects,
     saveProject: saveProject

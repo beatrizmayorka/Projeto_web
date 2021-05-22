@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Criar novo produto</title>
-    <%- include('../../imports'); -%>
+
+<head>
+  <title>Criar novo produto</title>
+  <%- include('../../imports'); -%>
     <link rel="shortcut icon" href=" ">
-  </head>
-  <body>
-    <header>
-      <%- include('../../navbar'); -%>
-    </header>
-    
-  <div class = "container">
-        <div class="row">
-          <div class="col-md-12">
-              <h1>Novo Produto</h1>
+</head>
+
+<body>
+  <header>
+    <%- include('../../navbar'); -%>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Novo Produto</h1>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <form action="create" method="Produtos" enctype="multipart/form-data">
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="produtoName">Nome</label>
+            <input name="name" type="text" class="form-control is-valid" id="produtoName" placeholder="Nome do roduto"
+              required>
           </div>
         </div>
 
-        <div class="col-md-12">
-          <form action = "create" method="Produtos" enctype="multipart/form-data">
-            <div class="form-row">
-              <div class="col-md-12 mb-3">
-                <label for="produtoName">Nome</label>
-                <input name="name" type="text" class="form-control is-valid" id="produtoName" placeholder="Nome do roduto" required>
-              </div>
-            </div>
-  
-            <div class="form-row">
-              <div class="col-md-12 mb-3">
-                <label for="produtoImage">Imagem</label>
-                <input name="image" type="file" class="form-control is-valid" id="produtoImage" placeholder="Imagem do Produto" required>
-              </div>
-            </div>
-      
-            <div class="form-row">
-              <div class="col-md-12 mb-3">
-                <label for="produtoDescription">Descrição</label>
-                <textarea name="description" type="text" class="form-control is-valid" id="produtoDescription" placeholder="Descrição do Produto" required></textarea>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="col-md-12 mb-3">
-                <label for="produtoPrice">Preço</label>
-                <textarea name="price" type="text" class="form-control is-valid" id="produtoPrice" placeholder="Preço do Produto" required></textarea>
-              </div>
-            </div>
-  
-          
-            </div>
-            <button class="btn btn-dark btn-outline-info" type="submit">Salvar o produto</button>
-          </form>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="produtoImage">Imagem</label>
+            <input name="image" type="file" class="form-control is-valid" id="produtoImage"
+              placeholder="Imagem do Produto" required>
+          </div>
         </div>
+
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="produtoDescription">Descrição</label>
+            <textarea name="description" type="text" class="form-control is-valid" id="produtoDescription"
+              placeholder="Descrição do Produto" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="produtoPrice">Preço</label>
+            <textarea name="price" type="text" class="form-control is-valid" id="produtoPrice"
+              placeholder="Preço do Produto" required></textarea>
+          </div>
+        </div>
+
+
+    </div>
+    <button class="btn btn-dark btn-outline-info" type="submit">Salvar o produto</button>
+    </form>
   </div>
-  </body>
+  </div>
+</body>
+
 </html>
